@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c; /* Dark background */
+    color: #f0f0f0; /* Light text */
+    padding-top: 80px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #2b2b2b; /* Slightly lighter dark color for contrast */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.card h2 {
+    color: #ffde59; /* Yellow text for titles */
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1em;
+    color: #dcdcdc;
+}
+
+.card strong {
+    font-weight: bold;
+    color: #ffffff; /* White color for bold text */
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.contact-info p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.contact-info a {
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+.links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 35px;
+    position: fixed; /* Keeps the links fixed */
+    top: 10px; /* Position at the top of the viewport */
+    right:400px; /* Align to the right */
+    z-index: 1000;
+}
+
+.links a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 0;
+    transition: 0.2s ease;
+}
+
+.links a:hover {
+    color: #47b2e4;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .links {
+        flex-direction: column; /* Stack links vertically on smaller screens */
+        position: fixed;
+        top: 70px; /* Adjust position to avoid overlap with other elements */
+        right: 10px; /* Slightly closer to the screen edge */
+        background: rgba(0, 0, 0, 0.7); /* Add a background for better readability */
+        padding: 10px;
+        border-radius: 8px;
+     }
+    }

@@ -1,0 +1,120 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(150deg, #54baea, #a5753f);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Ensures content stacks vertically */
+    min-height: 100vh; /* Sets the minimum height of the body to cover the full viewport */
+}
+
+body:hover {
+    background: linear-gradient(135deg, #54baea, #a5753f);
+}
+
+/* Contact Form Styling */
+.contact-form {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+    margin: auto; /* Centers the form vertically and horizontally */
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #e9da0a;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    background: linear-gradient(135deg, #54baea, #a5753f);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background: linear-gradient(135deg, #3f77d0, #e9da0a);
+}
+
+label {
+    text-align: left;
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+/* Links Styling */
+.links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 35px;
+    position: fixed; /* Keeps the links fixed */
+    top: 10px; /* Position at the top of the viewport */
+    right: 400px; /* Align to the right */
+}
+
+.links a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 0;
+    transition: 0.2s ease;
+}
+
+.links a:hover {
+    color: #47b2e4;
+}
+
+/* Footer Styling */
+footer {
+    background: linear-gradient(150deg, #54baea, #a5753f);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto; /* Pushes the footer to the bottom */
+    width: 100%;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .links {
+        flex-direction: column; /* Stack links vertically on smaller screens */
+        position: fixed;
+        top: 70px; /* Adjust position to avoid overlap with other elements */
+        right: 10px; /* Slightly closer to the screen edge */
+        background: rgba(0, 0, 0, 0.7); /* Add a background for better readability */
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .links a {
+        padding: 8px 15px; /* Adjust padding for smaller screens */
+        font-size: 14px;
+    }
+}

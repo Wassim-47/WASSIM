@@ -1,0 +1,269 @@
+/* General styles for body and layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(to bottom, #69aeba 23%, #6d198e 95%);
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  h1, h2 {
+    color: #fffafa;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #47b2e4;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #175d69;
+  }
+  
+  /* Header/Navigation */
+  header {
+    background: #2a7c8a;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  nav a {
+    color: white;
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+  
+  nav a:hover {
+    background-color: #47b2e4;
+    border-radius: 5px;
+  }
+  
+  /* Main Learn More Section */
+  .learn-more {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .learn-more h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .learn-more p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.7;
+  }
+  
+  .learn-more h2 {
+    font-size: 2rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Features Section */
+  .learn-more ul {
+    padding: 0;
+  }
+  
+  .learn-more ul li {
+    font-size: 1.1rem;
+    margin: 15px 0;
+    color: #efe9e9;
+  }
+  
+  /* Testimonials Section */
+  .learn-more blockquote {
+    font-size: 1.2rem;
+    color: #f9f5f5;
+    background: #373434;
+    padding: 20px;
+    margin: 30px auto;
+    width: 80%;
+    border-left: 5px solid #47b2e4;
+    font-style: italic;
+  }
+  
+  .learn-more blockquote:before {
+    content: "“";
+    font-size: 3rem;
+    color: #47b2e4;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+  }
+  
+  /* How it Works Section */
+  .learn-more ol {
+    padding: 20px;
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+  }
+  
+  .learn-more ol li {
+    margin-bottom: 20px;
+  }
+  
+  /* CTA Button */
+  .cta-button {
+    display: inline-block;
+    background-color: #47b2e4;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 40px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #175d69;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background: #2a7c8a;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+  }
+  
+  footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+ 
+  
+  footer ul li a {
+    color: white;
+    font-size: 1rem;
+    padding: 5px 10px;
+  }
+  
+  footer ul li a:hover {
+    background-color: #47b2e4;
+    border-radius: 5px;
+  }
+  
+  /* Responsive Adjustments */
+  @media screen and (max-width: 768px) {
+    .learn-more {
+      padding: 40px 20px;
+    }
+  
+    .learn-more h1 {
+      font-size: 2rem;
+    }
+  
+    .learn-more p {
+      font-size: 1rem;
+    }
+  
+    .learn-more h2 {
+      font-size: 1.6rem;
+    }
+  
+    .learn-more ul li {
+      font-size: 1rem;
+    }
+  
+    .cta-button {
+      font-size: 1rem;
+      padding: 12px 25px;
+    }
+  
+    footer ul {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .learn-more {
+      padding: 30px 15px;
+    }
+  
+    .learn-more h1 {
+      font-size: 1.8rem;
+    }
+  
+    .learn-more p {
+      font-size: 0.9rem;
+    }
+  
+    .learn-more h2 {
+      font-size: 1.4rem;
+    }
+  
+    .learn-more ul li {
+      font-size: 0.9rem;
+    }
+  
+    .cta-button {
+      font-size: 0.9rem;
+      padding: 10px 20px;
+    }
+  
+    footer ul li a {
+      font-size: 0.9rem;
+    }
+    .links {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        gap: 35px;
+        position: fixed; /* Keeps the links fixed */
+        top: 10px; /* Position at the top of the viewport */
+        right:400px; /* Align to the right */
+        z-index: 1000;
+    }
+    
+    .links a {
+        font-weight: 500;
+        text-decoration: none;
+        color: #fff;
+        padding: 10px 0;
+        transition: 0.2s ease;
+    }
+    
+    .links a:hover {
+        color: #47b2e4;
+    }
+    
+    /* Responsive */
+    @media screen and (max-width: 768px) {
+        .links {
+            flex-direction: column; /* Stack links vertically on smaller screens */
+            position: fixed;
+            top: 70px; /* Adjust position to avoid overlap with other elements */
+            right: 10px; /* Slightly closer to the screen edge */
+            background: rgba(0, 0, 0, 0.7); /* Add a background for better readability */
+            padding: 10px;
+            border-radius: 8px;
+         }
+        }
+  }
+  
