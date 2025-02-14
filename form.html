@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Wassim">
+    <meta name="description" content="Mobile App Developpement , its a mobile app for mobile Developpement and education in this domain">
+    <meta name="keywords" content="mobile, Developpement, app, link, Education">
+    <link rel="icon" href="" type="">
     <title>Formulaire de Contact</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -24,9 +28,15 @@
             <input type="email" id="email" name="email" required>
             <label for="message">Message :</label>
             <textarea id="message" name="message" required></textarea>
-            <button type="submit">Envoyer</button>
+            <button type="submit" onclick="calcule()">Envoyer</button>
         </form>
        
+    <script>
+        function calcule(){
+            window.alert("We will soon Contact you")
+        }
+    </script>
+
     </div>
     <footer>
         <h4>Copyrite &copy; 2024  Wassim Raoud &reg;</h4>
